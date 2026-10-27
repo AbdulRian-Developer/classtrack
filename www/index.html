@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#12151C" />
+  <meta name="color-scheme" content="dark light" />
+  <title>ClassTrack</title>
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <div id="app">
+    <main id="view" class="view"></main>
+    <nav id="tabbar" class="tabbar" aria-label="Main">
+      <button data-tab="home" class="tab"><span class="ico" data-icon="home"></span><span>Today</span></button>
+      <button data-tab="reports" class="tab"><span class="ico" data-icon="chart"></span><span>Reports</span></button>
+      <button data-tab="setup" class="tab"><span class="ico" data-icon="users"></span><span>Class</span></button>
+      <button data-tab="settings" class="tab"><span class="ico" data-icon="settings"></span><span>Settings</span></button>
+    </nav>
+  </div>
+  <div id="sheet-root"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="vendor/capacitor.js" onerror="this.remove()"></script>
+  <script src="vendor/jspdf.umd.min.js"></script>
+  <script src="vendor/jspdf.plugin.autotable.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/reports.js"></script>
+  <script src="js/native.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
