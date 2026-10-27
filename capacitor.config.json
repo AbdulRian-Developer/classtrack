@@ -1,0 +1,17 @@
+{
+  "appId": "com.classtrack.attendance",
+  "appName": "ClassTrack",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#12151C",
+    "allowMixedContent": false,
+    "webContentsDebuggingEnabled": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "initialViewportFitValueHint": "cover",
+      "style": "DARK"
+    }
+  }
+}
